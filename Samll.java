@@ -2,15 +2,20 @@ import java.util.Scanner;
 public class Small {
     public static void main(String[] args) {
       Scanner sc=new Scanner(System.in);
-      int a=sc.nextInt();
-      int b=sc.nextInt();
-      if(a<b)
+      //String a=sc.nextLine();
+      int[] b=new int[2];
+      for(int i=0;i<2;i++)
       {
-        System.out.println(a);
+          b[i]=sc.nextInt();
       }
-      else if(b<a)
+     // String b[]=a.split("\\S");
+      if(b[0]<b[1])
       {
-        System.out.println(b);
+        System.out.println(b[0]);
+      }
+      else if(b[1]<b[0])
+      {
+        System.out.println(b[1]);
       }
         
     }
